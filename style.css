@@ -1,0 +1,139 @@
+:root{
+  --blue-dark: #002c65;
+  --blue: #4d5f91;
+  --blue-white: #979dc1;
+  --gray: #dfe0f4;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family:Arial, Helvetica, sans-serif;
+
+}
+
+.main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.regForm{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 600px;
+    padding:3rem;
+    background-color: var(--blue-white);
+    border: 1px solid var(--blue);
+    border-radius: 1rem;
+    box-shadow: 0 1px 3px var(--blue);
+}
+
+.regForm h1{
+    text-align: center;
+}
+
+.regForm--block{
+    display: flex;
+    flex-direction: column;
+}
+
+.regForm--input{
+    margin-top: 2.5rem;
+    padding: 0.8rem;
+    border: 1px solid var(--blue-dark);
+    font-size:16px;
+}
+
+.regForm--input::placeholder{
+    opacity: 0.7;
+}
+
+.regForm--error{
+    position:absolute;
+    width: 65%;
+    margin-top: 5.5rem;
+    padding-left:0.8rem;
+    font-size: 12px;
+    color:red;
+}
+
+.regForm--error-show{
+    display: inline;
+}
+
+.regForm--block-date{
+    display:flex;
+    align-items:center;
+    margin-top: 2rem;
+    margin-bottom: 3rem;
+}
+
+.regForm--date{
+    width: 30%;
+    margin: 0 1rem;
+}
+
+.regForm--block-date p{
+    padding-left:0.8rem;
+}
+
+.regForm--submit{
+    padding:0.8rem;
+    width: 10rem;
+    background-color: var(--blue);
+    border: none;
+    color:white;
+    text-transform: uppercase;
+    box-shadow: 0 2px 3px var(--blue-dark);
+    letter-spacing:0.1rem;
+    transition: all 0.15s ease-in;
+}
+
+.regForm--submit:hover{
+    opacity: 0.8;
+}
+
+.regForm--submit:active{
+    background-color: var(--blue-dark);
+    opacity: 0.8;
+}
+
+@media screen and (max-width:620px) {
+    .regForm{
+        width: 420px;
+    }
+
+    .regForm h1{
+        font-size: 26px;
+    }
+    .regForm--input{
+        margin-top: 2rem;
+        padding: 0.4rem;
+        font-size:14px;
+    }
+
+    .regForm--error{
+        margin-top: 4.1rem;
+        padding-left:0.4rem;
+        font-size: 11px;
+    }
+
+    .regForm--date{
+        width: 40%;
+        margin: 0 1rem;
+    }
+    
+    .regForm--block-date p {
+        font-size: 14px;
+        padding-left: 0.4rem;
+    }
+
+    .regForm--submit{
+        padding:0.5rem;
+        font-size: 12px;
+    }
+}

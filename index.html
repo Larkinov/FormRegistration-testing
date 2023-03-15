@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <!-- <meta http-equiv="X-UA-Compatible" content="IE=edge"> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Registration</title>
+  </head>
+  <body>
+    <div class="main">
+      <div class="regForm">
+        <h1>Зарегистрироваться</h1>
+        <div class="regForm--block" style="margin-top: 0rem">
+          <input
+            type="text"
+            placeholder="Имя"
+            class="regForm--input"
+            id="name"
+          />
+          <span class="regForm--error"></span>
+        </div>
+        <div class="regForm--block">
+          <input
+            type="text"
+            placeholder="Фамилия"
+            class="regForm--input"
+            id="lastName"
+          />
+          <span class="regForm--error"></span>
+        </div>
+        <div class="regForm--block">
+          <input
+            type="text"
+            placeholder="Электронная почта"
+            class="regForm--input"
+            id="email"
+          />
+          <span class="regForm--error"></span>
+        </div>
+        <div class="regForm--block">
+          <input
+            type="password"
+            placeholder="Пароль"
+            class="regForm--input"
+            id="password"
+          />
+          <span class="regForm--error"></span>
+        </div>
+        <div class="regForm--block">
+          <input
+            type="password"
+            placeholder="Подтверждение пароля"
+            class="regForm--input"
+            id="passwordMatch"
+          />
+          <span class="regForm--error"></span>
+        </div>
+
+        <div class="regForm--block-date">
+          <p>Дата рождения:</p>
+          <input
+            type="date"
+            placeholder="Дата рождения"
+            class="regForm--input regForm--date"
+            id="birth"
+          />
+          <span class="regForm--error"></span>
+        </div>
+        <button class="regForm--submit">Отправить</button>
+      </div>
+    </div>
+  </body>
+  <script src="script.js"></script>
+</html>
